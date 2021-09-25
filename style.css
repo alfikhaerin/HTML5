@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+body,
+h1 {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+.fixed {
+  position: fixed;
+}
+.text-center {
+  text-align: center;
+}
+/* .wrapper {
+    
+} */
+.container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  padding: 8px;
+}
+
+#header {
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 40px;
+  z-index: 2;
+  background: rgb(235, 122, 122);
+}
+
+#header .container .logo {
+  width: 70%;
+  display: flex;
+  float: left;
+}
+
+#header .container .logo img {
+  width: 50px;
+  object-fit: contain;
+}
+
+#header .container .logo .logo-title {
+  color: white;
+  margin-left: 1rem;
+}
+
+#header .container .menu {
+  width: 30%;
+  float: left;
+  margin: auto;
+}
+
+#header .container .menu ul {
+  float: right;
+  margin: 0 auto;
+}
+
+#header .container .menu ul li {
+  float: left;
+  list-style: none;
+  padding: 0 1rem;
+}
+
+#header .container .menu ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+#terbaru {
+  background: #ffffff;
+  height: calc(100vh - 200px);
+  padding: 100px 0; /* (Vertical Horizontal) */
+  /* padding: 0px 0px 0px 0px; /* Top Right Bottom Left */
+}
+
+.content {
+  width: 70%;
+  float: left;
+  /* background: red; */
+  padding-right: 1rem;
+}
+
+.content .hero-image {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.content .hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar {
+  width: 30%;
+  float: left;
+  /* background: blue; */
+  padding-left: 1rem;
+}
+
+.urut-article .article {
+  width: 100%;
+  min-height: 120px;
+  margin-bottom: 1rem;
+  /* background: green; */
+}
+
+.urut-article .article .content-article {
+  width: 80%;
+  float: right;
+  /* background: lightgreen; */
+}
+
+.urut-article .article .content-article .title-article {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.urut-article .article .content-article .description-article {
+  font-size: 16px;
+  font-weight: 400;
+  padding-right: 1rem;
+}
+
+.urut-article .article .image-article {
+  width: 20%;
+  height: 7px;
+  float: left;
+}
+
+.urut-article .article .image-article img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.list-reading {
+  width: 100%;
+  position: sticky;
+  top: 100px;
+}
+
+.list-reading .reading {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.list-reading .reading-image {
+  width: 20px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.list-reading .reading-image img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.list-reading .reading-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.list-reading .reading-description {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.detail-article {
+  width: 100%;
+}
+
+.detail-article audio {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.detail-article embed {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 1rem;
+}
+
+.detail-article .title-article {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.detail-article .article {
+  margin-bottom: 1rem;
+}
+
+.clear {
+  clear: both;
+}
+
+.video {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.video.kecil {
+  width: 100%;
+}
+
+#terbaru .video .cover img {
+  height: 100%;
+  width: 100%;
+  /* object-fit: contain; /* Dipaksa tarik kesemua sudut*/
+  object-fit: cover; /* Ditampilkan sebutuhnya */
+  /* object-fit: fill; /* Mengisi semua sudut */
+  /* object-fit: scale-down; */
+}
+
+#terbaru .video .overlay {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#terbaru .video .overlay img {
+  width: 100px;
+  height: 100px;
+}
+
+#terbaru .video .overlay .article-title {
+  padding: 1rem;
+}
+
+#terbaru .video .overlay .article-title a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+}
